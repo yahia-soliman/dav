@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   workflow_dispatch:
-     
+
   push:
     branches:
       - master
@@ -20,4 +20,3 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          wranglerVersion: "3.111.0"
